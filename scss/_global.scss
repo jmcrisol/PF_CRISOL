@@ -1,10 +1,9 @@
-
 //Reset
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 //fuentes
 $fuente_principal: 'Roboto', sans-serif !important;
@@ -12,19 +11,3 @@ $fuente_principal: 'Roboto', sans-serif !important;
 html {
   font-family: $fuente_principal
 }
-
-
-.boton-mushi {
-  color: white;
-  background-color: $color-link-active;
-  &:hover {
-    background-color: $color-link-hover-claro !important;
-  }
-}
-
-
-
-
-
-
-

@@ -1,19 +1,9 @@
 #banner1 {
-    height: 60vh;
-    background-image: url("../assets/img/back.webp");
-    background-size: cover;
-    background-position: 60%;
-    background-repeat: no-repeat;
-    animation: myAnimBanner 10s ease-in 0s 1 normal forwards;
+    @include banner ("../assets/img/back.webp", 60%)
 }
 
 #banner-porta {
-    height: 60vh;
-    background-image: url("../assets/img/banner-porta.jpg");
-    background-size: cover;
-    background-position: 60%;
-    background-repeat: no-repeat;
-    animation: myAnimBanner 10s ease-in 0s 1 normal forwards;
+    @include banner ("../assets/img/i1.webp", center !important)
 }
 
 @keyframes myAnimBanner {
@@ -28,6 +18,16 @@
     }
 }
 
+.boton-mushi {
+    color: white;
+    background-color: $color-link-active;
+
+    &:hover {
+        background-color: $color-link-hover-claro !important;
+    }
+}
+
+
 .banner-text {
     text-align: center;
     font-size: 15vw;
@@ -35,4 +35,14 @@
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.293);
     background-color: #792e9272;
     backdrop-filter: blur(5px);
+}
+
+#contacto {
+    background-image: url(../assets/img/contacto.webp);
+    background-size: cover;
+    height: 100vh;
+}
+
+.glass {
+    @include glass
 }
