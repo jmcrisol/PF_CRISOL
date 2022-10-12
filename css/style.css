@@ -5,3 +5,90 @@
 
 html {
   font-family: "Roboto", sans-serif !important; }
+
+.boton-mushi {
+  color: white;
+  background-color: #9538b3; }
+  .boton-mushi:hover {
+    background-color: #e3a0f6 !important; }
+
+.menu {
+  background-image: linear-gradient(to bottom, #f3e1ff, #f4e6ff, #f6eaff, #f7efff, #f9f3ff); }
+
+.links {
+  color: black; }
+  .links:active {
+    color: #9538b3;
+    text-decoration: none; }
+  .links:visited {
+    color: #606060;
+    text-decoration: none; }
+  .links:hover {
+    animation: menu-mov .3s ease 0s 1 normal forwards;
+    color: #d22dff;
+    text-decoration: none; }
+
+@keyframes menu-mov {
+  0% {
+    transform: translate(0); }
+  20% {
+    transform: translate(-1px, 1px); }
+  40% {
+    transform: translate(-1px, -3px); }
+  60% {
+    transform: translate(1px, 3px); }
+  80% {
+    transform: translate(1px, -1px); }
+  100% {
+    transform: translate(0); } }
+
+.dropdown-item:hover {
+  /* Modifica clase bootstrap ... color del selector */
+  background-color: #f3e2ff;
+  animation: menu-mov .3s ease 0s 1 normal forwards; }
+
+.dropdown-menu {
+  /* Modifica clase bootstrap ... Fondo blur */
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px); }
+
+#banner1 {
+  height: 60vh;
+  background-image: url("../assets/img/back.webp");
+  background-size: cover;
+  background-position: 60%;
+  background-repeat: no-repeat;
+  animation: myAnimBanner 10s ease-in 0s 1 normal forwards; }
+
+#banner-porta {
+  height: 60vh;
+  background-image: url("../assets/img/banner-porta.jpg");
+  background-size: cover;
+  background-position: 60%;
+  background-repeat: no-repeat;
+  animation: myAnimBanner 10s ease-in 0s 1 normal forwards; }
+
+@keyframes myAnimBanner {
+  0% {
+    background-position: center top;
+    background-size: 100%; }
+  100% {
+    background-position: center top;
+    background-size: 150%; } }
+
+.banner-text {
+  text-align: center;
+  font-size: 15vw;
+  color: white;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.293);
+  background-color: #792e9272;
+  backdrop-filter: blur(5px); }
+
+.foot {
+  background-image: linear-gradient(to top, #f3e1ff, #f4e6ff, #f6eaff, #f7efff, #f9f3ff); }
+
+@media (max-width: 456px) {
+  #banner1 {
+    animation: none; }
+  #banner-porta {
+    animation: none; } }
