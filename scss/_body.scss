@@ -6,6 +6,10 @@
     @include banner ("../assets/img/i1.webp", center !important)
 }
 
+#banner-combo {
+    @include banner ("../assets/img/combo-bg.webp", center !important)
+}
+
 @keyframes myAnimBanner {
     0% {
         background-position: center top;
@@ -42,6 +46,14 @@
     background-size: cover;
     height: 100vh;
 }
+
+#nosotros {
+    background-image: url(../assets/img/nos1.webp);
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+}
+
 
 .glass {
     @include glass

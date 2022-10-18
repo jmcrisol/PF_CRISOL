@@ -1,50 +1,103 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 html {
-  font-family: "Roboto", sans-serif !important; }
+  font-family: "Roboto", sans-serif !important;
+}
 
 .menu {
-  background-image: linear-gradient(to bottom, #f3e1ff, #f4e6ff, #f6eaff, #f7efff, #f9f3ff); }
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f3e1ff), color-stop(#f4e6ff), color-stop(#f6eaff), color-stop(#f7efff), to(#f9f3ff));
+  background-image: linear-gradient(to bottom, #f3e1ff, #f4e6ff, #f6eaff, #f7efff, #f9f3ff);
+}
 
 .links {
-  color: black; }
-  .links:active {
-    color: #9538b3;
-    text-decoration: none; }
-  .links:visited {
-    color: #606060;
-    text-decoration: none; }
-  .links:hover {
-    animation: menu-mov .3s ease 0s 1 normal forwards;
-    color: #d22dff;
-    text-decoration: none; }
+  color: black;
+}
+.links:active {
+  color: #9538b3;
+  text-decoration: none;
+}
+.links:visited {
+  color: #606060;
+  text-decoration: none;
+}
+.links:hover {
+  -webkit-animation: menu-mov 0.3s ease 0s 1 normal forwards;
+          animation: menu-mov 0.3s ease 0s 1 normal forwards;
+  color: #d22dff;
+  text-decoration: none;
+}
+
+@-webkit-keyframes menu-mov {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-1px, 1px);
+            transform: translate(-1px, 1px);
+  }
+  40% {
+    -webkit-transform: translate(-1px, -3px);
+            transform: translate(-1px, -3px);
+  }
+  60% {
+    -webkit-transform: translate(1px, 3px);
+            transform: translate(1px, 3px);
+  }
+  80% {
+    -webkit-transform: translate(1px, -1px);
+            transform: translate(1px, -1px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
 
 @keyframes menu-mov {
   0% {
-    transform: translate(0); }
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
   20% {
-    transform: translate(-1px, 1px); }
+    -webkit-transform: translate(-1px, 1px);
+            transform: translate(-1px, 1px);
+  }
   40% {
-    transform: translate(-1px, -3px); }
+    -webkit-transform: translate(-1px, -3px);
+            transform: translate(-1px, -3px);
+  }
   60% {
-    transform: translate(1px, 3px); }
+    -webkit-transform: translate(1px, 3px);
+            transform: translate(1px, 3px);
+  }
   80% {
-    transform: translate(1px, -1px); }
+    -webkit-transform: translate(1px, -1px);
+            transform: translate(1px, -1px);
+  }
   100% {
-    transform: translate(0); } }
-
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
 .dropdown-item:hover {
   /* Modifica clase bootstrap ... color del selector */
   background-color: #f3e2ff;
-  animation: menu-mov .3s ease 0s 1 normal forwards; }
+  -webkit-animation: menu-mov 0.3s ease 0s 1 normal forwards;
+          animation: menu-mov 0.3s ease 0s 1 normal forwards;
+}
 
 .dropdown-menu {
   /* Modifica clase bootstrap ... Fondo blur */
   background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(5px); }
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
 
 #banner1 {
   background-image: url("../assets/img/back.webp");
@@ -52,7 +105,9 @@ html {
   background-size: cover;
   background-position: 60%;
   background-repeat: no-repeat;
-  animation: myAnimBanner 10s ease-in 0s 1 normal forwards; }
+  -webkit-animation: myAnimBanner 10s ease-in 0s 1 normal forwards;
+          animation: myAnimBanner 10s ease-in 0s 1 normal forwards;
+}
 
 #banner-porta {
   background-image: url("../assets/img/i1.webp");
@@ -60,48 +115,95 @@ html {
   background-size: cover;
   background-position: center !important;
   background-repeat: no-repeat;
-  animation: myAnimBanner 10s ease-in 0s 1 normal forwards; }
+  -webkit-animation: myAnimBanner 10s ease-in 0s 1 normal forwards;
+          animation: myAnimBanner 10s ease-in 0s 1 normal forwards;
+}
+
+#banner-combo {
+  background-image: url("../assets/img/combo-bg.webp");
+  height: 60vh;
+  background-size: cover;
+  background-position: center !important;
+  background-repeat: no-repeat;
+  -webkit-animation: myAnimBanner 10s ease-in 0s 1 normal forwards;
+          animation: myAnimBanner 10s ease-in 0s 1 normal forwards;
+}
+
+@-webkit-keyframes myAnimBanner {
+  0% {
+    background-position: center top;
+    background-size: 100%;
+  }
+  100% {
+    background-position: center top;
+    background-size: 150%;
+  }
+}
 
 @keyframes myAnimBanner {
   0% {
     background-position: center top;
-    background-size: 100%; }
+    background-size: 100%;
+  }
   100% {
     background-position: center top;
-    background-size: 150%; } }
-
+    background-size: 150%;
+  }
+}
 .boton-mushi {
   color: white;
-  background-color: #9538b3; }
-  .boton-mushi:hover {
-    background-color: #e3a0f6 !important; }
+  background-color: #9538b3;
+}
+.boton-mushi:hover {
+  background-color: #e3a0f6 !important;
+}
 
 .banner-text {
   text-align: center;
   font-size: 15vw;
   color: white;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.293);
-  background-color: #792e9272;
-  backdrop-filter: blur(5px); }
+  background-color: rgba(121, 46, 146, 0.4470588235);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
 
 #contacto {
   background-image: url(../assets/img/contacto.webp);
   background-size: cover;
-  height: 100vh; }
+  height: 100vh;
+}
+
+#nosotros {
+  background-image: url(../assets/img/nos1.webp);
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+}
 
 .glass {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3); }
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
 
 .foot {
-  background-image: linear-gradient(to top, #f3e1ff, #f4e6ff, #f6eaff, #f7efff, #f9f3ff); }
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f3e1ff), color-stop(#f4e6ff), color-stop(#f6eaff), color-stop(#f7efff), to(#f9f3ff));
+  background-image: linear-gradient(to top, #f3e1ff, #f4e6ff, #f6eaff, #f7efff, #f9f3ff);
+}
 
 @media (max-width: 456px) {
   #banner1 {
-    animation: none; }
+    -webkit-animation: none;
+            animation: none;
+  }
+
   #banner-porta {
-    animation: none; } }
+    -webkit-animation: none;
+            animation: none;
+  }
+}
