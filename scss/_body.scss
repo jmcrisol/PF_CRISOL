@@ -34,11 +34,14 @@
 
 .banner-text {
     text-align: center;
-    font-size: 15vw;
+    font-size: 13vw;
+    font-weight:bold;
     color: white;
+    padding: 0 5vh 0 5vh;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.293);
     background-color: #792e9272;
     backdrop-filter: blur(5px);
+    border-radius: 1rem;
 }
 
 #contacto {

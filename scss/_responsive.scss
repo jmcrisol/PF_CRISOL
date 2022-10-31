@@ -1,11 +1,16 @@
 @media (max-width: 456px) {
-    #banner1 {
-        animation: none
-    }
+  .banner-text {
+    padding: 0 2vh 0 2vh;
+    
+}
 
-    #banner-porta {
-        animation: none
-    }
+  #banner1 {
+    animation: none
+  }
+
+  #banner-porta {
+    animation: none
+  }
 }
 
 @media (max-width: 567px) {}

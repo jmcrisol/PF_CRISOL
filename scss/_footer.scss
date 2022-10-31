@@ -1,3 +1,28 @@
 .foot {
-    background-image: $gradient-top
+  background-image: $gradient-top
+}
+
+.foot-btn {
+
+  &:hover {
+    animation: foot-mov .3s ease 0s 1 normal forwards;
+    color: $color-link-hover;
+    text-decoration: none;
+  }
+}
+
+@keyframes foot-mov {
+  0% {
+    transform: scale(1, 1);
+  }
+
+
+  40% {
+    transform: scale(2, 2);
+  }
+
+
+  100% {
+    transform: scale(1, 1);
+  }
 }
