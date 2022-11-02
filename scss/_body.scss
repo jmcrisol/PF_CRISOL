@@ -61,3 +61,25 @@
 .glass {
     @include glass
 }
+
+#cards{
+    div{
+        div{
+            margin-bottom: 2.5%;
+            img{
+                width: 95%;
+                margin: 2.5%;
+                border-radius: 1.5vw;
+                box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.377);
+                transition: box-shadow 200ms ease-in;
+
+
+                &:hover {
+                    box-shadow: 3px 5px 20px rgba(150, 20, 132, 0.616);
+                }
+                
+            }
+            
+        }
+    }
+}
