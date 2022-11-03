@@ -34,7 +34,7 @@ formulario.addEventListener("submit", (event) => {
     let apellidos = document.querySelector("#apellidos").value;
     let email = document.querySelector("#email").value;
     let mensaje =
-      `send?phone=${telefono}&text=FORMULARIO DE CONTACTO%0A--------------------%0A¿Cual es tu nombre?%0A${nombre}%0A%0A¿Cuáles son tus apellidos?%0A${apellidos}%0A%0A¿Cuál es tu correo electrónico?%0A${email}%0A%0AMensaje:%0A${textarea}`;
+      `send?phone=${telefono}&text=FORMULARIO DE PEDIDO Y PRESUPUESTO%0A--------------------%0A¿Cual es tu nombre?%0A${nombre}%0A%0A¿Cuáles son tus apellidos?%0A${apellidos}%0A%0A¿Cuál es tu correo electrónico?%0A${email}%0A%0ADetalle del pedido:%0A${textarea}`;
     if (isMobile()) {
       window.open(urlMobile + mensaje, "_blank");
     } else {
