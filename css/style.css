@@ -52,8 +52,8 @@ html {
   text-decoration: none;
 }
 .links:hover {
-  -webkit-animation: menu-mov 0.3s ease 0s 1 normal forwards;
-          animation: menu-mov 0.3s ease 0s 1 normal forwards;
+  -webkit-animation: menu-mov 1s ease 0s 1 normal forwards;
+          animation: menu-mov 1s ease 0s 1 normal forwards;
   color: #d22dff;
   text-decoration: none;
 }
@@ -115,8 +115,8 @@ html {
   background-color: #f3e2ff;
   border: white;
   border-radius: 0.5rem;
-  -webkit-animation: menu-mov 0.3s ease 0s 1 normal forwards;
-          animation: menu-mov 0.3s ease 0s 1 normal forwards;
+  -webkit-animation: menu-mov 1s ease 0s 1 normal forwards;
+          animation: menu-mov 1s ease 0s 1 normal forwards;
 }
 
 .dropdown-item:hover {
@@ -142,6 +142,9 @@ html {
   -webkit-animation: myAnimBanner 10s ease-in 0s 1 normal forwards;
           animation: myAnimBanner 10s ease-in 0s 1 normal forwards;
 }
+#banner1 div div div {
+  font-size: 13vw;
+}
 
 #banner-porta {
   background-image: url("../assets/img/i1.webp");
@@ -164,6 +167,9 @@ html {
   background-repeat: no-repeat;
   -webkit-animation: myAnimBanner 10s ease-in 0s 1 normal forwards;
           animation: myAnimBanner 10s ease-in 0s 1 normal forwards;
+}
+#banner-combo div div div {
+  font-size: 13vw;
 }
 
 .boton-mushi {
@@ -220,6 +226,7 @@ html {
 }
 .porta-txt div div h1 {
   font-weight: bold;
+  font-size: 3em;
 }
 
 #staticBackdrop {
@@ -228,7 +235,7 @@ html {
   -webkit-backdrop-filter: blur(3px);
 }
 
-#cards div div {
+.cards div div {
   padding: 0;
   overflow: hidden;
   border-radius: 1.5vw;
@@ -236,7 +243,7 @@ html {
   -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.293);
           box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.293);
 }
-#cards div div img {
+.cards div div img {
   width: 100%;
   height: 100%;
   -webkit-transition: -webkit-transform 0.5s, -webkit-filter 0.5s;
@@ -246,7 +253,7 @@ html {
   -webkit-filter: saturate(100%);
           filter: saturate(100%);
 }
-#cards div div img:hover {
+.cards div div img:hover {
   -webkit-transform: scale(120%);
           transform: scale(120%);
   -webkit-filter: saturate(150%);

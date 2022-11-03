@@ -73,7 +73,7 @@
                 Productos
               </a>
               <ul class="dropdown-menu border-0 shadow">
-                <li><a class="dropdown-item active" href="./paginas/portalibretas.html">Portalibretas</a></li>
+                <li><a class="dropdown-item active" href="./portalibretas.html">Portalibretas</a></li>
                 <li><a class="dropdown-item" href="./combos.html">Combos</a></li>
                 <li><a class="dropdown-item disabled" href="#">Otros</a></li>
               </ul>
@@ -91,52 +91,54 @@
     <div class="row">
       <div class="col">
         <div class="">
-          <div class="banner-text">Portalibretas</div>
+          <div class="banner-text cursor">Portalibretas</div>
         </div>
       </div>
     </div>
   </div>
   <!-- Termina Banner -->
+
 <main class="container-fluid">
 
-<div class="container-fluid porta-txt" id="porta-txt">
-  <div class="row d-flex align-content-center justify-content-center">
-  <div class="col-10 text-start">
-    <h1>Más de 30 diseños para elegir. Son impermeables y lavables.</h1>
-    <h2>Qué mejor que la documentación de tu bebé esté protegida y tenga un toque de ternura y color. Podés elegir con o sin el nombre de tu bebé</h2>
-    <h3>Tamaño standar 14x21cm. (libretas sanitarias Prov. Bs. As.) </h3>
-    <br>
-    <button type="button" class="btn boton-mushi bi bi-whatsapp" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-      Hacénos tu pedido por Whatsapp
-    </button>
+  <div class="container porta-txt" id="porta-banner-top">
+    <div class="row d-flex align-content-center justify-content-center">
+      <div class="col-10 text-start cursor">
+        <h1>Más de 30 diseños para elegir. Son impermeables y lavables.</h1>
+        <h2>Qué mejor que la documentación de tu bebé esté protegida y tenga un toque de ternura y color. Podés elegir
+          con o sin el nombre de tu bebé</h2>
+        <h3>Tamaño standar 14x21cm. (libretas sanitarias Prov. Bs. As.) </h3>
+        <br>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn boton-mushi bi bi-whatsapp" data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop">
+          Hacénos tu pedido por Whatsapp
+        </button>
+      </div>
     </div>
-  <!-- Button trigger modal -->
-
   </div>
-</div>
 
-  <div class="container-fluid" id="cards">
+  <div class="container-fluid cards" id="cards-porta">
     <div class="row d-flex justify-content-evenly align-content-center">
 
-      <div class="col-lg-3 col-md-6 col-sm-11 col-xs-11">
+      <div class="col-lg-3 col-md-6 col-sm-11 col-xs-11" data-bs-toggle="tooltip" title="Abrir!">
         <img src="../assets/img/p1.webp" alt="" onclick="image(this)">
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-11 col-xs-11">
+      <div class="col-lg-3 col-md-6 col-sm-11 col-xs-11" data-bs-toggle="tooltip" title="Abrir!">
         <img src="../assets/img/pa.webp" alt="" onclick="image(this)">
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-11 col-xs-11">
+      <div class="col-lg-3 col-md-6 col-sm-11 col-xs-11" data-bs-toggle="tooltip" title="Abrir!">
         <img src="../assets/img/pc.webp" alt="" onclick="image(this)">
       </div>
-      <div class="col-lg-3 col-md-8 col-sm-11 col-xs-11">
+      <div class="col-lg-3 col-md-8 col-sm-11 col-xs-11" data-bs-toggle="tooltip" title="Abrir!">
         <img src="../assets/img/pn.webp" alt="" onclick="image(this)">
       </div>
-      <div class="col-lg-3 col-md-8 col-sm-11 col-xs-11">
+      <div class="col-lg-3 col-md-8 col-sm-11 col-xs-11" data-bs-toggle="tooltip" title="Abrir!">
         <img src="../assets/img/pnm.webp" alt="" onclick="image(this)">
       </div>
-      <div class="col-lg-3 col-md-8 col-sm-11 col-xs-11">
+      <div class="col-lg-3 col-md-8 col-sm-11 col-xs-11" data-bs-toggle="tooltip" title="Abrir!">
         <img src="../assets/img/pr.webp" alt="" onclick="image(this)">
       </div>
-      <div class="col-lg-3 col-md-8 col-sm-11 col-xs-11">
+      <div class="col-lg-3 col-md-8 col-sm-11 col-xs-11" data-bs-toggle="tooltip" title="Abrir!">
         <img src="../assets/img/pv.webp" alt="" onclick="image(this)">
       </div>
     </div>
@@ -144,9 +146,17 @@
 
 </main>
 
+<div class="container porta-txt" id="porta-banner-bottom">
+  <div class="row d-flex align-content-center justify-content-center">
+  <div class="col-10 text-start cursor">
+    <h3>Los pedidos se realizan dentro de las 48hs hábiles. Todos los productos personalizados se deben señar con el 50%.</h3>
+    </div>
+  </div>
+</div>
 
 <!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -154,36 +164,35 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-       <div class="container">
-    <div class="row">
-      <div class="col">
-        <form id="formulario" >
-          <div class="m-5">
-            <div class="mb-3">
-              <label for="nombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="nombre">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <form id="formulario">
+                <div class="m-5">
+                  <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre">
+                  </div>
+                  <div class="mb-3">
+                    <label for="apellidos" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellidos">
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Nunca compartiremos tu email con otras personas.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="textarea" class="form-label">Detallanos tu pedido</label>
+                    <textarea class="form-control" id="textarea" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="btn boton-mushi bi bi-whatsapp" id="submit"> Enviar</button>
+                </div>
+              </form>
             </div>
-            <div class="mb-3">
-              <label for="apellidos" class="form-label">Apellido</label>
-              <input type="text" class="form-control" id="apellidos">
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">Nunca compartiremos tu email con otras personas.</div>
-            </div>
-            <div class="mb-3">
-              <label for="textarea" class="form-label">Detallanos tu pedido</label>
-              <textarea class="form-control" id="textarea" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn boton-mushi bi bi-whatsapp" id="submit"> Enviar</button>
           </div>
-        </form>
+        </div>
       </div>
-    </div>
-  </div>
-      </div>
-
     </div>
   </div>
 </div>
@@ -194,7 +203,7 @@
     <div id="footer" class="container ">
       <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-0">
         <div class="d-none d-lg-block d-md-block col-md-4 d-flex align-items-center">
-          <a href="./index.html" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <a href="../index.html" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
             <img src="../assets/img/iso.svg" width="40" alt="">
           </a>
           <span class="mb-3 mb-md-0 text-muted cursor">Mushiditos Bebés</span>
@@ -233,6 +242,12 @@
       window.open(src);
     }
   </script>
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+    </script>
 
 </body>
 
