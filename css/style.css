@@ -52,8 +52,8 @@ html {
   text-decoration: none;
 }
 .links:hover {
-  -webkit-animation: menu-mov 1s ease 0s 1 normal forwards;
-          animation: menu-mov 1s ease 0s 1 normal forwards;
+  -webkit-animation: menu-mov 0.5s ease 0s 1 normal forwards;
+          animation: menu-mov 0.5s ease 0s 1 normal forwards;
   color: #d22dff;
   text-decoration: none;
 }
@@ -115,15 +115,15 @@ html {
   background-color: #f3e2ff;
   border: white;
   border-radius: 0.5rem;
-  -webkit-animation: menu-mov 1s ease 0s 1 normal forwards;
-          animation: menu-mov 1s ease 0s 1 normal forwards;
+  -webkit-animation: menu-mov 0.5s ease 0s 1 normal forwards;
+          animation: menu-mov 0.5s ease 0s 1 normal forwards;
 }
 
 .dropdown-item:hover {
   /* Modifica clase bootstrap ... color del selector */
   background-color: #f3e2ff;
-  -webkit-animation: menu-mov 0.3s ease 0s 1 normal forwards;
-          animation: menu-mov 0.3s ease 0s 1 normal forwards;
+  -webkit-animation: menu-mov 0.5s ease 0s 1 normal forwards;
+          animation: menu-mov 0.5s ease 0s 1 normal forwards;
 }
 
 .dropdown-menu {
