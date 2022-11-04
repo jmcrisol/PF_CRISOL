@@ -1,34 +1,13 @@
 #banner1 {
     @include banner ("../assets/img/back.webp", 60%);
-    div{
-        div{
-            div{
-                font-size: 13vw;
-            }
-        }
-    }
 }
 
 #banner-porta {
     @include banner ("../assets/img/i1.webp", center !important);
-    div{
-        div{
-            div{
-                font-size: 13vw;
-            }
-        }
-    }
 }
 
 #banner-combo {
     @include banner ("../assets/img/combo-bg.webp", center !important);
-    div{
-        div{
-            div{
-                font-size: 13vw;
-            }
-        }
-    }
 }
 
 
@@ -45,10 +24,11 @@
 
 .banner-text {
     text-align: center;
-    font-size: 13vw;
+    font-size: 10em;
     font-weight:bold;
     color: white;
-    padding: 0 5vh 0 5vh;
+    margin: 0 5vw 0 5vw;
+    padding: 0 5vw 0 5vw;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.293);
     background-color: #792e9272;
     backdrop-filter: blur(5px);
@@ -59,6 +39,12 @@
     background-image: url(../assets/img/contacto.webp);
     background-size: cover;
     height: 100vh;
+    overflow-y: auto;
+
+}
+
+#contacto-form {
+    height: 90%;
 }
 
 
@@ -66,11 +52,14 @@
     background-image: url(../assets/img/nos1.webp);
     background-size: cover;
     background-position: bottom;
+    background-attachment: fixed;
     height: 100vh;
-
 }
 
-
+.nosotros-txt {
+    @include bann-grad;
+    border-radius:0 !important; 
+}
 
 .glass {
     @include glass
@@ -78,22 +67,46 @@
 
 
 .porta-txt {
-    background-image: $gradient-banner; 
-    border-radius: 3vw;
+    @include bann-grad;
     
-    padding: 5vw;
-    margin-top: 5vw;
-    margin-bottom: 5vw;
     div {
         div{
             h1{
-                font-weight: bold;
-                font-size: 3em;
+                font-size: 28px;
+                margin-bottom: 1.5vw;
+            }
+            h2{
+                font-size: 18px;
+
+            }
+            h3{
+                font-size: 1rem;
+                margin-bottom: 1.5vw;
+
             }
         }
     }
 
 }
+.bottom-txt {
+    @include bann-grad;
+    
+    div {
+        div{
+            
+            h2{
+                font-size: 18px;
+
+            }
+            h3{
+                font-size: 1rem;
+
+            }
+        }
+    }
+
+}
+
 
 #staticBackdrop {
     background-color: rgba(50, 1, 57, 0.422);
@@ -108,10 +121,14 @@
         div{
             padding: 0;
             overflow: hidden;
-            border-radius: 1.5vw;
+            border-radius: 6px;
             margin: 1vw;
             box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.293) ;
-            
+            transition: box-shadow 0.5s ;
+            &:hover{
+                box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.597) ;
+                
+            }
             
 
             img {

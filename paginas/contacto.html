@@ -75,7 +75,7 @@
               <ul class="dropdown-menu border-0 shadow">
                 <li><a class="dropdown-item" href="./portalibretas.html">Portalibretas</a></li>
                 <li><a class="dropdown-item" href="./combos.html">Combos</a></li>
-                <li><a class="dropdown-item disabled" href="#">Otros</a></li>
+              
               </ul>
             </li>
             <li class="nav-item mx-3 menu-btn">
@@ -87,31 +87,32 @@
     </nav>
   </header>
 
-  <div class="container-fluid d-flex justify-content-center align-items-center" id="contacto">
-    <form id="formulario" class="glass animate__animated animate__fadeInDown">
-      <div class="m-5">
-        <h1>Envianos un Whatsapp</h1>
-        <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="nombre">
+  <div id="contacto">
+    <div class="container-fluid d-flex justify-content-center align-items-center" id="contacto-form">
+      <form id="formulario" class="glass animate__animated animate__fadeInDown">
+        <div class="m-md-5 m-sm-3 m-2">
+          <h1>Envianos un Whatsapp</h1>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre">
+          </div>
+          <div class="mb-3">
+            <label for="apellidos" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="apellidos">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Nunca compartiremos tu email con otras personas.</div>
+          </div>
+          <div class="mb-3">
+            <label for="textarea" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="textarea" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn boton-mushi bi bi-whatsapp" id="submit"> Enviar</button>
         </div>
-        <div class="mb-3">
-          <label for="apellidos" class="form-label">Apellido</label>
-          <input type="text" class="form-control" id="apellidos">
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">Nunca compartiremos tu email con otras personas.</div>
-        </div>
-        <div class="mb-3">
-          <label for="textarea" class="form-label">Mensaje</label>
-          <textarea class="form-control" id="textarea" rows="3"></textarea>
-        </div>
-
-        <button type="submit" class="btn boton-mushi bi bi-whatsapp" id="submit"> Enviar</button>
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
 
   <!-- Emppieza footer -->

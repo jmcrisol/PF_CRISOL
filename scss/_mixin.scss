@@ -27,3 +27,10 @@
     border: 1px solid rgba(255, 255, 255, 0.212);
 }
 
+@mixin bann-grad {
+background-image: $gradient-banner; 
+border-radius: 6px; 
+padding: 5vw;
+margin-top: 5vw;
+margin-bottom: 5vw;
+}

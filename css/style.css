@@ -142,9 +142,6 @@ html {
   -webkit-animation: myAnimBanner 10s ease-in 0s 1 normal forwards;
           animation: myAnimBanner 10s ease-in 0s 1 normal forwards;
 }
-#banner1 div div div {
-  font-size: 13vw;
-}
 
 #banner-porta {
   background-image: url("../assets/img/i1.webp");
@@ -155,9 +152,6 @@ html {
   -webkit-animation: myAnimBanner 10s ease-in 0s 1 normal forwards;
           animation: myAnimBanner 10s ease-in 0s 1 normal forwards;
 }
-#banner-porta div div div {
-  font-size: 13vw;
-}
 
 #banner-combo {
   background-image: url("../assets/img/combo-bg.webp");
@@ -167,9 +161,6 @@ html {
   background-repeat: no-repeat;
   -webkit-animation: myAnimBanner 10s ease-in 0s 1 normal forwards;
           animation: myAnimBanner 10s ease-in 0s 1 normal forwards;
-}
-#banner-combo div div div {
-  font-size: 13vw;
 }
 
 .boton-mushi {
@@ -182,10 +173,11 @@ html {
 
 .banner-text {
   text-align: center;
-  font-size: 13vw;
+  font-size: 10em;
   font-weight: bold;
   color: white;
-  padding: 0 5vh 0 5vh;
+  margin: 0 5vw 0 5vw;
+  padding: 0 5vw 0 5vw;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.293);
   background-color: rgba(121, 46, 146, 0.4470588235);
   -webkit-backdrop-filter: blur(5px);
@@ -197,13 +189,29 @@ html {
   background-image: url(../assets/img/contacto.webp);
   background-size: cover;
   height: 100vh;
+  overflow-y: auto;
+}
+
+#contacto-form {
+  height: 90%;
 }
 
 #nosotros {
   background-image: url(../assets/img/nos1.webp);
   background-size: cover;
   background-position: bottom;
+  background-attachment: fixed;
   height: 100vh;
+}
+
+.nosotros-txt {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#ffffff), color-stop(#ede4ff), color-stop(#e0c8ff), color-stop(#d8a9ff), to(#d488ff));
+  background-image: linear-gradient(to right top, #ffffff, #ede4ff, #e0c8ff, #d8a9ff, #d488ff);
+  border-radius: 6px;
+  padding: 5vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  border-radius: 0 !important;
 }
 
 .glass {
@@ -219,14 +227,36 @@ html {
 .porta-txt {
   background-image: -webkit-gradient(linear, left bottom, right top, from(#ffffff), color-stop(#ede4ff), color-stop(#e0c8ff), color-stop(#d8a9ff), to(#d488ff));
   background-image: linear-gradient(to right top, #ffffff, #ede4ff, #e0c8ff, #d8a9ff, #d488ff);
-  border-radius: 3vw;
+  border-radius: 6px;
   padding: 5vw;
   margin-top: 5vw;
   margin-bottom: 5vw;
 }
 .porta-txt div div h1 {
-  font-weight: bold;
-  font-size: 3em;
+  font-size: 28px;
+  margin-bottom: 1.5vw;
+}
+.porta-txt div div h2 {
+  font-size: 18px;
+}
+.porta-txt div div h3 {
+  font-size: 1rem;
+  margin-bottom: 1.5vw;
+}
+
+.bottom-txt {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#ffffff), color-stop(#ede4ff), color-stop(#e0c8ff), color-stop(#d8a9ff), to(#d488ff));
+  background-image: linear-gradient(to right top, #ffffff, #ede4ff, #e0c8ff, #d8a9ff, #d488ff);
+  border-radius: 6px;
+  padding: 5vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+.bottom-txt div div h2 {
+  font-size: 18px;
+}
+.bottom-txt div div h3 {
+  font-size: 1rem;
 }
 
 #staticBackdrop {
@@ -238,10 +268,18 @@ html {
 .cards div div {
   padding: 0;
   overflow: hidden;
-  border-radius: 1.5vw;
+  border-radius: 6px;
   margin: 1vw;
   -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.293);
           box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.293);
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+}
+.cards div div:hover {
+  -webkit-box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.597);
+          box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.597);
 }
 .cards div div img {
   width: 100%;
@@ -303,7 +341,7 @@ html {
 }
 @media (max-width: 456px) {
   .banner-text {
-    padding: 0 2vh 0 2vh;
+    padding: 0 2vw 0 2vw;
   }
 
   #banner1 {
