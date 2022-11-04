@@ -1,149 +1,227 @@
 #banner1 {
-    @include banner ("../assets/img/back.webp", 60%);
+  height: 20vw;
+  padding-top: 8vh;
+  div{
+
+    div{
+
+      img{
+        margin-top: 5vh;
+        width: 50vw;
+      }
+      h2 {
+        color: #606060;
+        padding-top: 2vw;
+        margin-bottom: 5vh;
+        font-size: 2.5vw !important;
+        font-weight: bold;
+
+      }
+    }
+  }
 }
 
 #banner-porta {
-    @include banner ("../assets/img/i1.webp", center !important);
+  @include banner ("../assets/img/i1.webp", center !important);
 }
 
 #banner-combo {
-    @include banner ("../assets/img/combo-bg.webp", center !important);
+  @include banner ("../assets/img/combo-bg.webp", center !important);
 }
 
 
 
 .boton-mushi {
-    color: white;
-    background-color: $color-link-active;
+  color: white;
+  background-color: $color-link-active;
 
-    &:hover {
-        background-color: $color-link-hover-claro !important;
-    }
+  &:hover {
+    background-color: $color-link-hover-claro !important;
+  }
 }
 
 
 .banner-text {
-    text-align: center;
-    font-size: 13vw;
-    font-weight:bold;
-    color: white;
-    margin: 0 5vw 0 5vw;
-    padding: 0 5vw 0 5vw;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.293);
-    background-color: #792e9272;
-    backdrop-filter: blur(5px);
-    border-radius: 1rem;
+  text-align: center;
+  font-size: 13vw;
+  font-weight: bold;
+  color: white;
+  margin: 0 5vw 0 5vw;
+  padding: 0 5vw 0 5vw;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.293);
+  background-color: #792e9272;
+  backdrop-filter: blur(5px);
+  border-radius: 1rem;
+}
+
+.banner-logo {
+  text-align: center;
+  margin: 0 5vw 0 5vw;
+  padding: 0 5vw 0 5vw;
+  background-color: #ffdacf31;
+  background-image: linear-gradient(to right top, #8671b86e, #f6e2ff15, #f9d9ff00, #dfc7f70e, #c481ff6b);
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
 }
 
 #contacto {
-    background-image: url(../assets/img/contacto.webp);
-    background-size: cover;
-    height: 100vh;
-    overflow-y: auto;
+  background-image: url(../assets/img/contact-bg.svg);
+  background-size: cover;
+  height: 100vh;
+  overflow-y: auto;
 
 }
 
 #contacto-form {
-    height: 90%;
+  height: 90%;
 }
 
-
-#nosotros{
-    background-image: url(../assets/img/nos1.webp);
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
-    height: 100vh;
+#nosotros-fondo {
+  background-image: url(../assets/img/franja-bg.svg);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
 }
 
-.nosotros-txt {
-    @include bann-grad;
-    border-radius:0 !important; 
+.nosotros-franja {
+  height:max-content ;
+  @include bann-grad;
+  border-radius: 0 !important;
 }
 
 .glass {
-    @include glass
+  @include glass
 }
 
 
 .porta-txt {
-    @include bann-grad;
-    
+  @include bann-grad;
+
+  div {
     div {
-        div{
-            h1{
-                font-size: 28px;
-                margin-bottom: 1.5vw;
-            }
-            h2{
-                font-size: 18px;
+      h1 {
+        font-size: 28px;
+        margin-bottom: 1.5vw;
+      }
 
-            }
-            h3{
-                font-size: 1rem;
-                margin-bottom: 1.5vw;
+      h2 {
+        font-size: 18px;
 
-            }
-        }
+      }
+
+      h3 {
+        font-size: 1rem;
+        margin-bottom: 1.5vw;
+
+      }
     }
+  }
 
 }
+
 .bottom-txt {
-    @include bann-grad;
-    
+  @include bann-grad;
+
+  div {
     div {
-        div{
-            
-            h2{
-                font-size: 18px;
 
-            }
-            h3{
-                font-size: 1rem;
+      h2 {
+        font-size: 18px;
 
-            }
-        }
+      }
+
+      h3 {
+        font-size: 1rem;
+
+      }
     }
+  }
 
 }
 
 
 #staticBackdrop {
-    background-color: rgba(50, 1, 57, 0.422);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
+  background-color: rgba(50, 1, 57, 0.422);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 }
 
-.cards{
-    div{
-        
-
-        div{
-            padding: 0;
-            overflow: hidden;
-            border-radius: 6px;
-            margin: 1vw;
-            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.293) ;
-            transition: box-shadow 0.5s ;
-            &:hover{
-                box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.597) ;
-                
-            }
-            
-
-            img {
-                width: 100%;
-                height: 100%;
-                transition: transform 0.5s, filter 0.5s ; 
-                filter: saturate(100%);
-                
+.cards {
+  div {
 
 
-                &:hover{
-                    transform: scale(120%);
-                    filter: saturate(150%);
-                }
-            }
+    div {
+      padding: 0;
+      overflow: hidden;
+      border-radius: 6px;
+      margin: 1vw;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.293);
+      transition: box-shadow 0.5s;
+
+      &:hover {
+        box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.597);
+
+      }
+
+
+      img {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s, filter 0.5s;
+        filter: saturate(100%);
+
+
+
+        &:hover {
+          transform: scale(120%);
+          filter: saturate(150%);
         }
+      }
     }
+  }
+}
+.fondo-home {
+  background-image: url(../assets/img/franja-bg.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#wave-top {
+  height: 60vh;
+  background-image: url(../assets/img/wave-top.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin-bottom: -1px;
+  div {
+    img {
+      width: 50vw;
+    }
+  }
+}
+
+#franja1 {
+  background-color: #d488ff;
+  min-height: 60vh;
+  color: white;
+
+  h2 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+
+#franja2 {
+  margin-top: -1px;
+  background-image: url(../assets/img/wave-bottom.svg);
+  background-repeat: no-repeat;
+  min-height: 60vh;
+ 
+}
+
+#franja3 {
+  background-color: $color-link-hover-claro;
+  min-height: 20vw;
 }

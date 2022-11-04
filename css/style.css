@@ -134,13 +134,19 @@ html {
 }
 
 #banner1 {
-  background-image: url("../assets/img/back.webp");
-  height: 49vh;
-  background-size: cover;
-  background-position: 60%;
-  background-repeat: no-repeat;
-  -webkit-animation: myAnimBanner 10s ease-in 0s 1 normal forwards;
-          animation: myAnimBanner 10s ease-in 0s 1 normal forwards;
+  height: 20vw;
+  padding-top: 8vh;
+}
+#banner1 div div img {
+  margin-top: 5vh;
+  width: 50vw;
+}
+#banner1 div div h2 {
+  color: #606060;
+  padding-top: 2vw;
+  margin-bottom: 5vh;
+  font-size: 2.5vw !important;
+  font-weight: bold;
 }
 
 #banner-porta {
@@ -185,8 +191,20 @@ html {
   border-radius: 1rem;
 }
 
+.banner-logo {
+  text-align: center;
+  margin: 0 5vw 0 5vw;
+  padding: 0 5vw 0 5vw;
+  background-color: rgba(255, 218, 207, 0.1921568627);
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(134, 113, 184, 0.431372549)), color-stop(rgba(246, 226, 255, 0.0823529412)), color-stop(rgba(249, 217, 255, 0)), color-stop(rgba(223, 199, 247, 0.0549019608)), to(rgba(196, 129, 255, 0.4196078431)));
+  background-image: linear-gradient(to right top, rgba(134, 113, 184, 0.431372549), rgba(246, 226, 255, 0.0823529412), rgba(249, 217, 255, 0), rgba(223, 199, 247, 0.0549019608), rgba(196, 129, 255, 0.4196078431));
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border-radius: 1rem;
+}
+
 #contacto {
-  background-image: url(../assets/img/contacto.webp);
+  background-image: url(../assets/img/contact-bg.svg);
   background-size: cover;
   height: 100vh;
   overflow-y: auto;
@@ -196,15 +214,17 @@ html {
   height: 90%;
 }
 
-#nosotros {
-  background-image: url(../assets/img/nos1.webp);
+#nosotros-fondo {
+  background-image: url(../assets/img/franja-bg.svg);
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
-  height: 100vh;
 }
 
-.nosotros-txt {
+.nosotros-franja {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   background-image: -webkit-gradient(linear, left bottom, right top, from(#ffffff), color-stop(#ede4ff), color-stop(#e0c8ff), color-stop(#d8a9ff), to(#d488ff));
   background-image: linear-gradient(to right top, #ffffff, #ede4ff, #e0c8ff, #d8a9ff, #d488ff);
   border-radius: 6px;
@@ -296,6 +316,48 @@ html {
           transform: scale(120%);
   -webkit-filter: saturate(150%);
           filter: saturate(150%);
+}
+
+.fondo-home {
+  background-image: url(../assets/img/franja-bg.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#wave-top {
+  height: 60vh;
+  background-image: url(../assets/img/wave-top.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin-bottom: -1px;
+}
+#wave-top div img {
+  width: 50vw;
+}
+
+#franja1 {
+  background-color: #d488ff;
+  min-height: 60vh;
+  color: white;
+}
+#franja1 h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+#franja1 h3 {
+  font-size: 20px;
+}
+
+#franja2 {
+  margin-top: -1px;
+  background-image: url(../assets/img/wave-bottom.svg);
+  background-repeat: no-repeat;
+  min-height: 60vh;
+}
+
+#franja3 {
+  background-color: #e3a0f6;
+  min-height: 20vw;
 }
 
 .foot {
