@@ -7,8 +7,7 @@
     background-position: center top;
     background-size: 150%;
   }
-}
-@keyframes myAnimBanner {
+}@keyframes myAnimBanner {
   0% {
     background-position: center top;
     background-size: 100%;
@@ -145,7 +144,6 @@ html {
   color: #606060;
   padding-top: 2vw;
   margin-bottom: 5vh;
-  font-size: 2.5vw !important;
   font-weight: bold;
 }
 
@@ -188,7 +186,7 @@ html {
   background-color: rgba(121, 46, 146, 0.4470588235);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  border-radius: 1rem;
+  border-radius: 4vh;
 }
 
 .banner-logo {
@@ -200,7 +198,7 @@ html {
   background-image: linear-gradient(to right top, rgba(134, 113, 184, 0.431372549), rgba(246, 226, 255, 0.0823529412), rgba(249, 217, 255, 0), rgba(223, 199, 247, 0.0549019608), rgba(196, 129, 255, 0.4196078431));
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
-  border-radius: 1rem;
+  border-radius: 4vh;
 }
 
 #contacto {
@@ -401,18 +399,69 @@ html {
             transform: scale(1, 1);
   }
 }
-@media (max-width: 456px) {
+@media (max-width: 567px) {
   .banner-text {
     padding: 0 2vw 0 2vw;
   }
-
-  #banner1 {
-    -webkit-animation: none;
-            animation: none;
+  #banner1 div div img {
+    margin-top: 5vh;
+    width: 80vw;
   }
-
+  #banner1 div div h2 {
+    padding-top: 2vw;
+    margin-bottom: 5vh;
+    font-size: 24px;
+  }
   #banner-porta {
     -webkit-animation: none;
             animation: none;
+  }
+}
+@media (min-width: 567px) {
+  .banner-logo {
+    margin: 0 1vw 0 1vw;
+    padding: 0 1vw 0 1vw;
+  }
+  #banner1 div div img {
+    margin-top: 5vh;
+    width: 65vw;
+  }
+  #banner1 div div h2 {
+    padding-top: 2vw;
+    margin-bottom: 5vh;
+    font-size: 29px;
+  }
+}
+@media (min-width: 768px) {
+  .banner-logo {
+    margin: 0 1vw 0 1vw;
+    padding: 0 1vw 0 1vw;
+  }
+  #banner1 div div img {
+    margin-top: 5vh;
+    width: 65vw;
+  }
+  #banner1 div div h2 {
+    padding-top: 2vw;
+    margin-bottom: 5vh;
+    font-size: 31px;
+  }
+}
+@media (min-width: 992px) {
+  #banner1 div div img {
+    margin-top: 5vh;
+    width: 50vw;
+  }
+  #banner1 div div h2 {
+    padding-top: 2vw;
+    margin-bottom: 5vh;
+    font-size: 44px;
+  }
+}
+@media (min-width: 1200px) {
+  #banner1 div div h2 {
+    padding-top: 2vw;
+    margin-bottom: 5vh;
+    ffont-size: 29px;
   }
 }
