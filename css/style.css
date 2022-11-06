@@ -177,7 +177,7 @@ html {
 
 .banner-text {
   text-align: center;
-  font-size: 13vw;
+  font-size: 7vh;
   font-weight: bold;
   color: white;
   margin: 0 5vw 0 5vw;
@@ -318,6 +318,7 @@ html {
 
 .fondo-home {
   background-image: url(../assets/img/franja-bg.svg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -339,25 +340,74 @@ html {
   color: white;
 }
 #franja1 h2 {
-  font-size: 40px;
+  font-size: 55px;
   font-weight: bold;
 }
-#franja1 h3 {
-  font-size: 20px;
+
+.wave-bottom {
+  margin-top: -3px;
 }
 
-#franja2 {
-  margin-top: -1px;
-  background-image: url(../assets/img/wave-bottom.svg);
-  background-repeat: no-repeat;
-  min-height: 60vh;
+#franja2 h2 {
+  color: #606060;
+  font-size: 55px;
+  padding: 2vw;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+#wave-foot {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin-bottom: -1px;
 }
 
 #franja3 {
-  background-color: #e3a0f6;
+  background-color: #d488ff;
   min-height: 20vw;
 }
+#franja3 div ul li i:hover {
+  -webkit-animation: rrssmov 0.3s ease 0s 1 normal forwards;
+          animation: rrssmov 0.3s ease 0s 1 normal forwards;
+  color: #d22dff;
+  text-decoration: none;
+}
 
+@-webkit-keyframes rrssmov {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  40% {
+    -webkit-transform: scale(3, 3);
+            transform: scale(3, 3);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes rrssmov {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  40% {
+    -webkit-transform: scale(3, 3);
+            transform: scale(3, 3);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
 .foot {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#f3e1ff), color-stop(#f4e6ff), color-stop(#f6eaff), color-stop(#f7efff), to(#f9f3ff));
   background-image: linear-gradient(to top, #f3e1ff, #f4e6ff, #f6eaff, #f7efff, #f9f3ff);
@@ -401,6 +451,9 @@ html {
 }
 @media (max-width: 567px) {
   .banner-text {
+    font-size: 12vw;
+  }
+  .banner-text {
     padding: 0 2vw 0 2vw;
   }
   #banner1 div div img {
@@ -416,8 +469,18 @@ html {
     -webkit-animation: none;
             animation: none;
   }
+  #franja1 h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  #franja2 h2 {
+    font-size: 24px;
+  }
 }
 @media (min-width: 567px) {
+  .banner-text {
+    font-size: 9vw;
+  }
   .banner-logo {
     margin: 0 1vw 0 1vw;
     padding: 0 1vw 0 1vw;
@@ -431,8 +494,18 @@ html {
     margin-bottom: 5vh;
     font-size: 29px;
   }
+  #franja1 h2 {
+    font-size: 29px;
+    font-weight: bold;
+  }
+  #franja2 h2 {
+    font-size: 29px;
+  }
 }
 @media (min-width: 768px) {
+  .banner-text {
+    font-size: 8vw;
+  }
   .banner-logo {
     margin: 0 1vw 0 1vw;
     padding: 0 1vw 0 1vw;
@@ -446,8 +519,18 @@ html {
     margin-bottom: 5vh;
     font-size: 31px;
   }
+  #franja1 h2 {
+    font-size: 31px;
+    font-weight: bold;
+  }
+  #franja2 h2 {
+    font-size: 31px;
+  }
 }
 @media (min-width: 992px) {
+  .banner-text {
+    font-size: 7vw;
+  }
   #banner1 div div img {
     margin-top: 5vh;
     width: 50vw;
@@ -457,11 +540,28 @@ html {
     margin-bottom: 5vh;
     font-size: 44px;
   }
+  #franja1 h2 {
+    font-size: 44px;
+    font-weight: bold;
+  }
+  #franja2 h2 {
+    font-size: 44px;
+  }
 }
 @media (min-width: 1200px) {
+  .banner-text {
+    font-size: 7vw;
+  }
   #banner1 div div h2 {
     padding-top: 2vw;
     margin-bottom: 5vh;
-    ffont-size: 29px;
+    ffont-size: 44px;
+  }
+  #franja1 h2 {
+    font-size: 44px;
+    font-weight: bold;
+  }
+  #franja2 h2 {
+    font-size: 44px;
   }
 }

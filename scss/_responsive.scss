@@ -2,6 +2,10 @@ $banner-font: 24px;
 
 @media (max-width: 567px) {
 
+  .banner-text {
+    font-size: 12vw;
+  }
+
     .banner-text {
     padding: 0 2vw 0 2vw;
     }
@@ -22,9 +26,27 @@ $banner-font: 24px;
     }
   }
 
+
   #banner-porta {
     animation: none
   }
+
+  #franja1 {
+    
+    h2 {
+      font-size: $banner-font;
+      font-weight: bold;
+    }
+  
+  }
+
+  #franja2 {
+
+    h2 {
+      font-size: $banner-font;
+    }
+  }
+  
 }
 
 
@@ -32,6 +54,9 @@ $banner-font: 24px;
 
 
 @media (min-width: 567px) {
+  .banner-text {
+    font-size: 9vw;
+  }
 
   .banner-logo {
     margin: 0 1vw 0 1vw;
@@ -53,6 +78,21 @@ $banner-font: 24px;
       }
     }
   }
+  #franja1 {
+    
+    h2 {
+      font-size: calc( 5px + $banner-font);
+      font-weight: bold;
+    }
+  
+  }
+
+  #franja2 {
+
+    h2 {
+      font-size: calc( 5px + $banner-font);
+    }
+  }
 }
 
 
@@ -61,6 +101,10 @@ $banner-font: 24px;
 
 
 @media (min-width: 768px) {
+
+  .banner-text {
+    font-size: 8vw;
+  }
 
   .banner-logo {
     margin: 0 1vw 0 1vw;
@@ -82,6 +126,21 @@ $banner-font: 24px;
       }
     }
   }
+  #franja1 {
+    
+    h2 {
+      font-size: calc( 7px + $banner-font);
+      font-weight: bold;
+    }
+  
+  }
+
+  #franja2 {
+
+    h2 {
+      font-size: calc( 7px + $banner-font);
+    }
+  }
 }
 
 
@@ -91,6 +150,9 @@ $banner-font: 24px;
 
 
 @media (min-width: 992px) {
+  .banner-text {
+    font-size: 7vw;
+  }
 
   #banner1 {
     div{
@@ -107,6 +169,21 @@ $banner-font: 24px;
       }
     }
   }
+  #franja1 {
+    
+    h2 {
+      font-size: calc( 20px + $banner-font);
+      font-weight: bold;
+    }
+  
+  }
+
+  #franja2 {
+
+    h2 {
+      font-size: calc( 20px + $banner-font);
+    }
+  }
 }
 
 
@@ -117,6 +194,9 @@ $banner-font: 24px;
 
 
 @media (min-width: 1200px) {
+  .banner-text {
+    font-size: 7vw;
+  }
 
   #banner1 {
     div{
@@ -125,9 +205,25 @@ $banner-font: 24px;
         h2 {
           padding-top: 2vw;
           margin-bottom: 5vh;
-          ffont-size: calc( 5px + $banner-font);
+          ffont-size: calc( 20px + $banner-font);
         }
       }
+    }
+  }
+
+  #franja1 {
+    
+    h2 {
+      font-size: calc( 20px + $banner-font);
+      font-weight: bold;
+    }
+  
+  }
+
+  #franja2 {
+
+    h2 {
+      font-size: calc( 20px + $banner-font);
     }
   }
 }
